@@ -1,0 +1,81 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    background-color: #f2f3f3;
+    color: white;
+}
+
+.container-right-corner {
+    width: 90%;
+    margin: auto;
+}
+
+.container-right-corner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    background-color: #434f66;
+    clip-path: polygon(55% 0, 100% 0, 100% 30%, 100% 53%, 95% 47%, 95% 4%, 95% 4%, 62% 4%);
+}
+
+.sidebar {
+    width: 30%;
+    height: 100vh;
+    background-color: #434f66;
+}
+
+.resume-image-container {
+    padding-top: 20px;
+}
+
+.resume-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #808fa4;
+    object-fit: cover;
+}
+
+.full-name {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.full-name span {
+    color: #808fa4;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.social-item {
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.social-item a {
+    color: inherit; /* Inherit the text color from the parent */
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
