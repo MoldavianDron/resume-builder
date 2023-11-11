@@ -9,7 +9,7 @@ const result = {
 const Resume = () => {
   return (
     <>
-      <main className="container container-right-corner">
+      <main className="resume-container">
         <aside className="sidebar">
           <div className="resume-image-container">
             <img
@@ -62,6 +62,24 @@ const Resume = () => {
               />
               <a href="https://www.linkedin.com/in/andrzej-zaporozan-50b64617b" target="_blank" rel="noopener noreferrer">View my LinkedIn profile</a>
             </div>
+          </div>
+          <div className="personal-qualities-section">
+            <h3>LANGUAGES</h3>
+            <div className="break-line"></div>
+            <ul>
+              <li>English - B2</li>
+              <li>Polish - B2/C1</li>
+              <li>Russian - C1</li>
+            </ul>
+          </div>
+          <div className="personal-qualities-section">
+            <h3>HOBBIES</h3>
+            <div className="break-line"></div>
+            <ul>
+              <li>Tennis</li>
+              <li>Chess</li>
+              <li>Stand-up comedy</li>
+            </ul>
           </div>
         </aside>
       </main>
